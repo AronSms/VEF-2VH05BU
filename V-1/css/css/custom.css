@@ -1,0 +1,49 @@
+.display_N {
+    display: none;
+}
+.circle {
+    text-align: center;
+    color: white;
+    margin: 1em;
+}
+
+.circle h1 {
+    border-radius: 50%;
+    width: 80.5px;
+    height: 80.5px;
+    margin: auto;
+    padding: 10px 3px 0 3px;
+    border: 2px solid white;
+}
+
+.rotate {
+    transform: rotate(8deg);
+}
+
+.background-c {
+    background-color: turquoise;
+    width: 100%;
+    margin: 0;
+    padding: 2em;
+}
+
+.background-img {
+    background-image: url(../images/values-bg.jpg);
+}
+
+@media screen and (min-width: 37.5em) {
+    .circle {   
+        text-align: center;
+        color: white;
+        margin: 2em;
+    }
+
+    .circle h1 {
+        border-radius: 50%;
+        width: 102px;
+        height: 102px;
+        margin: auto;
+        padding: 16px 6px 0 6px;
+        border: 2px solid white;
+    }
+}
