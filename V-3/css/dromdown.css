@@ -1,0 +1,124 @@
+span {
+    margin: 3px;
+}
+
+a:hover,
+a:visited {
+  color: white; 
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: #254441;
+}
+
+.logo {
+	display: block;
+	padding:8px 8px 8px 32px;
+    float: left;
+	font-size:20px;
+	line-height: 10px;
+    color: white;
+}
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+nav ul {
+	float: left;
+	padding:0;
+	margin:8px 8px 8px 64px;
+	list-style: none;
+	position: relative;
+	}
+
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	background-color: #254441;
+	}
+
+nav a {
+	display:block;
+	padding:14px 20px;	
+	font-size:17px;
+	text-decoration:none;
+}
+
+nav ul li:hover { background: #000000; }
+
+nav a:hover { 
+	background-color: #000000; 
+}
+
+@media all and (max-width : 768px) {
+
+	.logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+        padding: 0;
+	}
+
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	.toggle {
+		display: block;
+		background-color: #254441;
+		padding:14px 20px;
+        text-align: center;
+        color: white;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+    nav ul {
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+	nav ul li {
+        margin: 0;
+        padding: 0;
+		display: block;
+		width: 100%;
+	}
+
+	nav ul li .toggle,
+	nav ul li span a {
+		background-color: #254441; 
+	}
+}

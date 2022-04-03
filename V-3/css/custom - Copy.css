@@ -1,0 +1,219 @@
+/* ekki stíla input heldur klasa */
+.menuinput {
+  display: none;
+}
+
+.menubutton,
+.topmenu {
+  border: 1px solid #cecfd5;
+  border-radius: 6px;
+}
+
+.menubutton {
+  color: #0087cc;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px 9px;
+  transition: all .25s ease;
+}
+
+.menubutton:hover {
+  color: #ff7b29;
+}
+
+.menuinput:checked + .menubutton {
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.35);
+  color: #9799a7;
+}
+.topnav {
+max-height: 0;
+  overflow: hidden;/* - transition height víbrar í símum,*/
+  position: fixed; /* ath - sticky*/
+  left: -20em;
+  top: 3em;
+  z-index: 100;
+  transition: all .5s ease;
+}
+
+.menuinput:checked ~ .topnav {
+  /*max-height: 500px;*/
+  left: 1em
+}
+
+.topmenu {
+  list-style: none;
+  margin: 8px 0 0 0;
+  padding: 0;
+  width: 130px;
+  background-color: rgb(255, 251, 240);
+}
+
+.topmenu li {
+  border-bottom: 1px solid #cecfd5;
+}
+
+.topmenu li:last-child {
+  border-bottom: 0;
+}
+
+.topmenu a {
+  color: #0087cc;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.topmenu a:hover {
+  color: #ff7b29;
+}
+
+figcaption {
+  padding: .5em;
+}
+
+textarea {
+  font-family: 'Trebuchet MS';
+  font-size: 1em;
+}
+
+.display_N {
+  display: none;
+}
+
+.text-S1 {
+  font-size: 2.5em;
+}
+
+.text-S2 {
+  font-size: 1.5em;
+}
+
+.circle {   
+  text-align: center;
+  color: white;
+  margin: 2em;
+}
+
+.circle h1 {
+  border-radius: 50%;
+  width: 102px;
+  height: 102px;
+  margin: auto;
+  padding: 16px 6px 0 6px;
+  border: 2px solid white;
+}
+    
+.rotate {
+  transform: rotate(8deg);
+  }
+    
+.background-c {
+  background-color: turquoise;
+  width: 96.2%;
+  margin: 0;
+  padding: 2em;
+  }
+    
+.background-img {
+  background-image: url(../images/values-bg.jpg);
+  width: 100%;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: .5em .5em .5em 1.7em;
+  padding: 0;
+  width: 96%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+  
+table tr {
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+  
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+  
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+  
+@media screen and (max-width: 600px) {
+  .circle {
+    text-align: center;
+    color: white;
+    margin: 1em;
+  }
+        
+  .circle h1 {
+    border-radius: 50%;
+    width: 80.5px;
+    height: 80.5px;
+    margin: auto;
+    padding: 10px 3px 0 3px;
+    border: 2px solid white;
+  }
+
+  .background-c {
+    background-color: turquoise;
+    width: 93.8%;
+    margin: 0;
+    padding: 2em;
+  }
+
+  table {
+    border: 0;
+  }
+  
+  table caption {
+    font-size: 1.3em;
+  }
+    
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+    
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+    
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+    
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+    
+  table td:last-child {
+    border-bottom: 0;
+  }
+  }
