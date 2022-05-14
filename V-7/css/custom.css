@@ -1,0 +1,391 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?b6dsff');
+  src:  url('../fonts/icomoon.eot?b6dsff#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?b6dsff') format('truetype'),
+    url('../fonts/icomoon.woff?b6dsff') format('woff'),
+    url('../fonts/icomoon.svg?b6dsff#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram:before {
+  content: "\e904";
+}
+.icon-twitter:before {
+  content: "\e901";
+}
+.icon-brand:before {
+  content: "\e901";
+}
+.icon-tweet:before {
+  content: "\e901";
+}
+.icon-social:before {
+  content: "\e901";
+}
+.icon-facebook:before {
+  content: "\e902";
+}
+.icon-github:before {
+  content: "\e903";
+}
+.icon-brand1:before {
+  content: "\e903";
+}
+.icon-octacat:before {
+  content: "\e903";
+}
+.icon-social1:before {
+  content: "\e903";
+}
+.icon-home:before {
+  content: "\e900";
+}
+.icon-price-tags:before {
+  content: "\e936";
+}
+.icon-bubble:before {
+  content: "\e96b";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-link:before {
+  content: "\e9cb";
+}
+.icon-info:before {
+  content: "\ea0c";
+}
+
+a {
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  color: #0087cc;
+  padding-left: 22px;
+  text-decoration: none;
+}
+
+a[href$=".pdf"] {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/pdf.png");
+}
+a[href$=".doc"] {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/doc.png");
+}
+a[href$=".jpg"] {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/image.png");
+}
+a[href$=".mp3"] {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/audio.png");
+}
+a[href$=".mp4"] {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/video.png");
+}
+
+body {
+  color: var(--Main-Text);
+  font-family: 'Poppins', sans-serif;
+}
+
+.background {
+  background-color: #000000;
+}
+
+a:hover,
+a:visited {
+color: var(--hover-A); 
+}
+
+nav input[type="checkbox"] {
+  display: none;
+}
+
+.toggle,
+[id^=drop] {
+display: none;
+}
+
+nav { 
+margin:0;
+padding: 0;
+background-color: var(--Main-Color-1);
+}
+
+.logo {
+  display: block;
+  padding:8px 8px 8px 32px;
+  float: left;
+  font-size:20px;
+  line-height: 10px;
+  color: var(--Main-Text);
+}
+
+nav:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+nav ul {
+  float: right;
+  padding:0;
+  margin:8px 8px 8px 64px;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  margin: 0px;
+  display:inline-block;
+}
+
+nav a {
+  display:block;
+  padding:14px 20px;	
+  font-size:17px;
+  text-decoration:none;
+  color: var(--Main-Text);
+}
+
+nav ul li:hover { 
+  background: var(--hover-B); 
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  color: var(--Secondary-Text);
+  border: 1px solid var(--Secondary-Text);
+}
+
+table {
+  border: 1px solid var(--Main-Color-2);
+  border-collapse: collapse;
+  align-content: center;
+  margin: 1em 1em 1em 11.3em;
+  padding: 0;
+  width: 73%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+  
+table tr {
+  border: 1px solid var(--Main-Color-2);
+}
+  
+table th,
+table td {
+  text-align: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--Main-Color-2);
+}
+  
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) td {
+  background: rgb(231, 231, 231);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+main {
+  color: var(--Secondary-Text);
+  margin: 0;
+}
+
+.content-center {
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.margin1 {
+  margin-top: 1em;
+}
+
+.margin2 {
+  margin-left: 1em;
+}
+
+.margin3 {
+  margin-top: 3em;
+}
+
+span {
+  margin: 5px;
+}
+
+.all-center {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.color-black {
+  color: var(--Secondary-Text);
+}
+
+footer {
+  background-color: var(--Main-Color-1);
+  padding: 2em;
+}
+
+footer ul li a {
+  color: var(--Main-Text);
+}
+
+footer ul {
+  list-style: none;
+}
+
+.copy {
+  text-align: center;
+}
+
+.bounce {
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 3s;
+}
+  
+@keyframes bounce {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, 50px, 0);
+    }
+    100% {
+        transform: translate3d(0, 0px, 0);
+    }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  table {
+    border: 0;
+    margin: .5em .0em .5em 6em;
+  }
+  
+  table caption {
+    font-size: 1.3em;
+  }
+    
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+    
+  table tr {
+    border-bottom: 3px solid var(--Main-Color-2);
+    display: block;
+    margin-bottom: .625em;
+  }
+    
+  table td {
+    border-bottom: 1px solid var(--Main-Color-2);
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+    
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+    
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	.toggle {
+		display: block;
+		background-color: var(--Main-Color-1);
+		padding:14px 20px;
+    text-align: right;
+    color: white;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+  nav {
+		margin: 0;
+    padding: 0;
+	}
+
+  nav ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+	nav ul li {
+    margin: 0;
+    padding: 0;
+		display: block;
+		width: 100%;
+    border: solid 1px var(--Main-Color-2);
+	}
+
+	nav ul li .toggle,
+	nav ul li span a {
+		background-color: var(--Main-Color-1); 
+	}
+}

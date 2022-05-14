@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verkefni-7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rokkitt&display=swap" rel="stylesheet">
+    <!--link rel="stylesheet" href="css/base.css"-->
+    <!--link rel="stylesheet" href="css/grid.css"-->
+    <!--link rel="stylesheet" href="css/custom.css"-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+  <div class="background">
+    <picture >
+      <source media="(min-width: 1281px)" srcset="images/elden-ring-main2K.jpg">
+      <source media="(min-width: 961px)" srcset="images/elden-ring-main1K.jpg">
+      <source media="(min-width: 481px)" srcset="images/elden-ring-main09K.jpg">
+      <img src="images/elden-ring-main04K.jpg">
+    </picture>
+  </div>
+  <nav class="">
+    <p class="logo">ELDEN RING&#8482;</p>
+    <label for="drop" class="toggle"><span class="icon-menu"></span>Valmynd</label>
+    <input type="checkbox" id="drop"/>
+    <ul class="menu">
+      <li><a href="index.html"><span class="icon-home"></span>Heim</a></li>
+      <li><a href="about-us.html"><span class="icon-info"></span>Um Okkur</a></li>
+      <li><a href="contact-us.html"><span class="icon-bubble"></span>Hafðu Samband</a></li>
+      <li><a href="features.html"><span class="icon-price-tags"></span>Kaupa</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="container col-1">
+      <div class="all-center">
+        <h3>Kaup Form</h2>
+        <form>
+          <label for="nafn">Nafn</label>
+          <input type="text" id="nafn" name="nafn" placeholder="Fullt Nafn" size="50" required>
+          <label for="Snr">Símanúmer</label>
+          <input type="text" id="Snr" name="Snr" placeholder="Símanúmer (7 Tölur)" maxlength="7" size="50" required>
+          <label for="NF">Netfang</label>
+          <input type="email" id="NF" name="NF" placeholder="dæmi@dæmi.com" size="50"><br>
+          <label for="kort">Kort</label>
+          <input type="text" id="kort" max="12" size="50" required><br>
+          <input type="text" class="margin1" maxlength="5" placeholder="01/24" size="10" required> <input type="text" class="margin1 margin2" maxlength="3" placeholder="337" size="10" required><br><br>
+          <input type="submit" value="Submit"> 
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="">
+    <section class="container col-3">
+      <div>
+        <p>Hafðu Sammband</p>
+        <form>
+          <label for="email abending"></label>
+          <input id="email" type="email" name="netfang" size="46" placeholder="dæmi@dæmi.com">
+          <p>Hvað villt þú segja</p>
+          <label for="abending"></label>
+          <textarea name="abending" id="ab" cols="43" rows="10" placeholder="Ábending" required></textarea><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div>
+        <p>Um Okkur</p>
+        <ul class=" ">
+          <li><a><span class="icon-instagram"></span>Instagram</a></li>
+          <li><a><span class="icon-twitter"></span>Twitter</a></li>
+          <li><a><span class="icon-facebook"></span>Facebook</a></li>
+          <li><a><span class="icon-github"></span>Github</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>Heimildir</p>
+        <ul class=" ">
+          <li><a><span class="icon-link"></span>https://en.bandainamcoent.eu/elden-ring</a></li>
+          <li><a><span class="icon-link"></span>https://en.wikipedia.org/wiki/Elden_Ring</a></li>
+          <li><a><span class="icon-link"></span>https://en.wikipedia.org/wiki/FromSoftware</a></li>
+          <li><a><span class="icon-link"></span>https://www.polygon.com/deals/22765784</a></li>
+        </ul>
+      </div>
+    </section>
+    <p class="copy">&copy;2022 ASS</p>
+  </footer>
+</body>
+</html>

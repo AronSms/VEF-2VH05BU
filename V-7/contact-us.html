@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verkefni-7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rokkitt&display=swap" rel="stylesheet">
+    <!--link rel="stylesheet" href="css/base.css"-->
+    <!--link rel="stylesheet" href="css/grid.css"-->
+    <!--link rel="stylesheet" href="css/custom.css"-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+  <div class="background">
+    <picture >
+      <source media="(min-width: 1281px)" srcset="images/elden-ring-main2K.jpg">
+      <source media="(min-width: 961px)" srcset="images/elden-ring-main1K.jpg">
+      <source media="(min-width: 481px)" srcset="images/elden-ring-main09K.jpg">
+      <img src="images/elden-ring-main04K.jpg">
+    </picture>
+  </div>
+  <nav class="">
+    <p class="logo">ELDEN RING&#8482;</p>
+    <label for="drop" class="toggle"><span class="icon-menu"></span>Valmynd</label>
+    <input type="checkbox" id="drop"/>
+    <ul class="menu">
+      <li><a href="index.html"><span class="icon-home"></span>Heim</a></li>
+      <li><a href="about-us.html"><span class="icon-info"></span>Um Okkur</a></li>
+      <li><a href="contact-us.html"><span class="icon-bubble"></span>Hafðu Samband</a></li>
+      <li><a href="features.html"><span class="icon-price-tags"></span>Kaupa</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="container col-2">
+      <div>
+        <h2>Hafðu Samband</h2>
+        <form>
+          <label for="nafn">Nafn</label>
+          <input type="text" id="nafn" name="nafn" placeholder="Fullt Nafn" size="50">
+          <label for="Snr">Símanúmer</label>
+          <input type="text" id="Snr" name="Snr" placeholder="Símanúmer (7 Tölur)" maxlength="7" size="50">
+          <label for="NF">Netfang</label>
+          <input id="email" type="email" name="netfang" size="50" placeholder="dæmi@dæmi.com">
+          <p>Því ertu að hafa samband</p>
+          <input type="radio" name="astaeda" value="a">Ummæli/Kvörtunn<br>
+          <input type="radio" name="astaeda" value="b">Sækja um vinnu<br>
+          <input type="radio" name="astaeda" value="c">Annað (Segðu afhverju í boxinnu fyrir neðan)<br>
+          <p>Hvað viltu segja</p>
+          <textarea name="abending" id="ab" cols="46" rows="12" placeholder="Ábending"></textarea><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div>
+        <h3>Hvar Þú Finnur Okkur</h3>
+        <iframe class="center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.1483106523715!2d139.66010395127628!3d35.67334998009883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f31aee607a17%3A0xb19b1bca69774bb8!2sFrom%20Software!5e0!3m2!1sen!2sis!4v1652374898666!5m2!1sen!2sis" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Höfuðstöðvar From Software eru staðsettar í, 26-2 Sasazuka, Shibuya City, Tokyo, Japan</p>
+      </div>
+    </section>
+  </main>
+  <footer class="">
+    <section class="container col-3">
+      <div>
+        <p>Hafðu Sammband</p>
+        <form>
+          <label for="email abending"></label>
+          <input id="email" type="email" name="netfang" size="46" placeholder="dæmi@dæmi.com">
+          <p>Hvað villt þú segja</p>
+          <label for="abending"></label>
+          <textarea name="abending" id="ab" cols="43" rows="10" placeholder="Ábending" required></textarea><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div>
+        <p>Um Okkur</p>
+        <ul class=" ">
+          <li><a><span class="icon-instagram"></span>Instagram</a></li>
+          <li><a><span class="icon-twitter"></span>Twitter</a></li>
+          <li><a><span class="icon-facebook"></span>Facebook</a></li>
+          <li><a><span class="icon-github"></span>Github</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>Heimildir</p>
+        <ul class=" ">
+          <li><a><span class="icon-link"></span>https://en.bandainamcoent.eu/elden-ring</a></li>
+          <li><a><span class="icon-link"></span>https://en.wikipedia.org/wiki/Elden_Ring</a></li>
+          <li><a><span class="icon-link"></span>https://en.wikipedia.org/wiki/FromSoftware</a></li>
+          <li><a><span class="icon-link"></span>https://www.polygon.com/deals/22765784</a></li>
+        </ul>
+      </div>
+    </section>
+    <p class="copy">&copy;2022 ASS</p>
+  </footer>
+</body>
+</html>
